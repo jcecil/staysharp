@@ -1,0 +1,23 @@
+use a hashmap where the key is an int / string / etc instead of implementing your own hashcode / equals methods.
+Use Integer, Character, Long, Double classes when adding items to a map or set.
+
+array.length
+String.length()
+Arraylist.size()
+
+string.charAt(i)
+string.replace("","") replaces all instances. This is what you want.
+string.replaceAll() expects a regex
+
+set.add(k)
+set.contains(k)
+map.put(k,v)
+map.containsKey(k)
+
+
+linkedhashmap is faster than hashmap when we need to do things like map.keyset
+hashmap.keyset iterates over all items in the capacity
+linkedhashmap.keyset iterates over all items that have been added to the list already
+Iteration over the collection-views of a LinkedHashMap requires time proportional to the size of the map, regardless of its capacity. Iteration over a HashMap is likely to be more expensive, requiring time proportional to its capacity.
+http://stackoverflow.com/questions/3870064/performance-considerations-for-keyset-and-entryset-of-map
+http://docs.oracle.com/javase/6/docs/api/java/util/LinkedHashMap.html
